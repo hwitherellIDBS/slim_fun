@@ -4,14 +4,14 @@ body {
   font-family: Arial;
   margin: 2rem;
   text-align: center;
-  color: rgb(114, 114, 114);
+  color: darkslategrey;
   font-size: 0.6rem;
 }
 
 /* header */
 
 .navbar {
-  background-color: teal;
+  background-color: cadetblue;
   padding: 1rem 2rem 0.5rem 2rem;
   margin: -2rem -2rem 1.5rem -2rem;
 }
@@ -42,4 +42,14 @@ a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* content */
+
+.class {
+  color: darksalmon;
+}
+
+#id {
+  color: darkorchid;
 }

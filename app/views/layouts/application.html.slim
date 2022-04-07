@@ -27,11 +27,10 @@ html
               / a href="https://www.youtube.com/" YouTube
 
     .main
-      h1.welcome Hello, I am a Slim test application.
+      h1.hello Hello, I am a Slim test application.
       = yield
 
-      #logo
-      h2.header This page is being rendered.
-      / .evil-wrapper
-      /   h2#author-name Author
-      /   ul.books Books
+      .evil-wrapper
+        h2.class This line is being rendered with a class.
+        h2#id This line is being rendered with an ID. 
+        
