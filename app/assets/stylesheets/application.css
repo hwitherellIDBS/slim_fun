@@ -4,14 +4,15 @@ body {
   font-family: Arial;
   margin: 2rem;
   text-align: center;
-  color: darkslategrey;
   font-size: 0.6rem;
+  background-color: #1f0f09;
+  color: white;
 }
 
 /* header */
 
 .navbar {
-  background-color: cadetblue;
+  background-color: #72aeb8;
   padding: 1rem 2rem 0.5rem 2rem;
   margin: -2rem -2rem 1.5rem -2rem;
 }
@@ -20,8 +21,10 @@ body {
   padding: 0;
 }
 
-#logo {
+.title {
   font-size: 2rem;
+  font-weight: bold;
+  color: white;
 }
 
 ul {
@@ -29,7 +32,7 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 li {
@@ -39,7 +42,7 @@ li {
 }
 
 a {
-  color: white;
+  color: #1f0f09;
   text-decoration: none;
   font-weight: bold;
 }
@@ -47,9 +50,9 @@ a {
 /* content */
 
 .class {
-  color: darksalmon;
+  color: lightsalmon;
 }
 
 #id {
-  color: darkorchid;
+  color: lightpink;
 }

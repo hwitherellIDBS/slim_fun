@@ -1,17 +1,23 @@
 doctype html
 html
+
   head
     title
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+
   body
     header.navbar
-      .logo
-        = link_to "Slim Test App", 'root_path', id: "logo"
+
+      .title
+        = "Slim Test App"
+
+      img alt="Moon" src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg" height="90"
+
         nav
           ul.navbar-right
-
+          
             / 2 different ways to link (both work)
             li
               = link_to "Facebook", 'https://www.facebook.com/'
@@ -27,6 +33,7 @@ html
               / a href="https://www.youtube.com/" YouTube
 
     .main
+
       h1.hello Hello, I am a Slim test application.
       = yield
 
