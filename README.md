@@ -1,6 +1,6 @@
 # Slim Fun
 
-This application is practice from 3 tutorials:
+This application is a combination of 2 tutorials:
 
 * Envato Tuts+ - ["An Introduction to Slim Templates"](https://code.tutsplus.com/articles/an-introduction-to-slim-templates--cms-26028)
 
