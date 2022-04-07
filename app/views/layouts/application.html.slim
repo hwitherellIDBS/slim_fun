@@ -11,14 +11,14 @@ html
     header.navbar
 
       .title
-        = "Slim Test App"
+        = "Slim Elephants"
 
       img alt="Moon" src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg" height="90"
 
         nav
           ul.navbar-right
           
-            / 2 different ways to link (both work)
+            / 2 ways to link
             li
               = link_to "Facebook", 'https://www.facebook.com/'
               / a href="https://www.facebook.com/" Facebook
@@ -34,10 +34,20 @@ html
 
     .main
 
-      h1.hello Hello, I am a Slim test application.
+      h1.hello This is only a tusk test.
       = yield
 
-      .evil-wrapper
-        h2.class This line is being rendered with a class.
-        h2#id This line is being rendered with an ID. 
+      .target-container
+
+        // 3 ways to assign class
+        h2.class_a.class_a_2#id_a A: This line is styled via class.
+        h2 class=:class_a,:class_a_2 id=:id_a (same)
+        h2 class=["class_a","class_a_2"] (same same)
+
+      .target-container
+
+        / 2 ways to assign id
+        h2#id_b.class_b.class_b_2 B: This line is styled via ID.
+        h2 class=:class_b,:class_b_2 id=:id_b (same)
+
         
