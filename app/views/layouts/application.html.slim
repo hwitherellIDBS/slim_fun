@@ -11,14 +11,27 @@ html
         = link_to "Slim Test App", 'root_path', id: "logo"
         nav
           ul.navbar-right
+
+            / 2 different ways to link (both work)
             li
-              = link_to "Home",    'root_path'
+              = link_to "Facebook", 'https://www.facebook.com/'
+              / a href="https://www.facebook.com/" Facebook
             li
-              = link_to "Help",    'help_path'
+              = link_to "Instagram", 'https://www.instagram.com/'
+              / a href="https://www.instagram.com/" Instagram
             li
-              = link_to "Sign up", 'sign_up_path'
+              = link_to "Twitter", 'https://twitter.com/'
+              / a href="https://twitter.com/" Twitter
             li
-              = link_to "Log in",  'login_path'
+              = link_to "YouTube", 'https://www.youtube.com/'
+              / a href="https://www.youtube.com/" YouTube
+
     .main
       h1.welcome Hello, I am a Slim test application.
       = yield
+
+      #logo
+      h2.header This page is being rendered.
+      / .evil-wrapper
+      /   h2#author-name Author
+      /   ul.books Books
