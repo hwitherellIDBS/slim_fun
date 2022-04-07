@@ -17,37 +17,57 @@ html
 
         nav
           ul.navbar-right
-          
-            / 2 ways to link
+
             li
+              / 4 ways to link
+
               = link_to "Facebook", 'https://www.facebook.com/'
+
               / a href="https://www.facebook.com/" Facebook
+              
+              / a[id="fb_id" class="fb_class" href="https://www.facebook.com/"] Facebook
+              
+              / a(href="https://www.facebook.com/"
+              /   id="fb_id"
+              /   class="fb_class") Facebook
+
             li
               = link_to "Instagram", 'https://www.instagram.com/'
-              / a href="https://www.instagram.com/" Instagram
+
             li
               = link_to "Twitter", 'https://twitter.com/'
-              / a href="https://twitter.com/" Twitter
+
             li
               = link_to "YouTube", 'https://www.youtube.com/'
-              / a href="https://www.youtube.com/" YouTube
+
 
     .main
 
-      h1.hello This is only a tusk test.
-      = yield
+      / 3 ways to write this line:
+
+      h1.hello_class#hello_id This is only a tusk test.
+
+      / h1[id="hello_id" class="hello_class"] This is only a tusk test.
+      
+      / h1(id="hello_id"
+      /   class="hello_class") This is only a tusk test.
+
+      / = yield
 
       .target-container
 
         // 3 ways to assign class
         h2.class_a.class_a_2#id_a A: This line is styled via class.
-        h2 class=:class_a,:class_a_2 id=:id_a (same)
-        h2 class=["class_a","class_a_2"] (same same)
+        / h2 class=:class_a,:class_a_2 id=:id_a This line is styled via class.
+        / h2 class=["class_a","class_a_2"] This line is styled via class.
 
       .target-container
 
         / 2 ways to assign id
         h2#id_b.class_b.class_b_2 B: This line is styled via ID.
-        h2 class=:class_b,:class_b_2 id=:id_b (same)
+        / h2 class=:class_b,:class_b_2 id=:id_b This line is styled via ID.
 
-        
+      .checkbox-container
+        input type="checkbox"
+        input type="checkbox" checked=true
+        input type="checkbox" checked=false
