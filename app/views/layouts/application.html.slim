@@ -54,20 +54,25 @@ html
 
       / = yield
 
-      .target-container
+      .container
 
         // 3 ways to assign class
         h2.class_a.class_a_2#id_a A: This line is styled via class.
         / h2 class=:class_a,:class_a_2 id=:id_a This line is styled via class.
         / h2 class=["class_a","class_a_2"] This line is styled via class.
 
-      .target-container
+      .container
 
         / 2 ways to assign id
         h2#id_b.class_b.class_b_2 B: This line is styled via ID.
         / h2 class=:class_b,:class_b_2 id=:id_b This line is styled via ID.
 
-      .checkbox-container
+      .container
         input type="checkbox"
         input type="checkbox" checked=true
         input type="checkbox" checked=false
+
+      .container
+        input type="text" id="inputs"
+        input type="text" id="inputs" disabled=true
+        input type="text" id="inputs" disabled=false

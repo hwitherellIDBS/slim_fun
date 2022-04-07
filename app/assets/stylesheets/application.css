@@ -53,7 +53,7 @@ h1 {
   font-size: 1.5rem;
 }
 
-.target-container {
+.container {
   margin: 1.25rem 0 1.25rem 0;
 }
 
@@ -63,4 +63,8 @@ h1 {
 
 #id_b {
   color: lightpink;
+}
+
+#inputs {
+  margin: 0 0.5rem 0 0.1rem;
 }
